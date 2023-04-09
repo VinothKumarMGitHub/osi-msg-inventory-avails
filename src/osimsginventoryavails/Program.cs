@@ -2,7 +2,7 @@ using System.Text.Json;
 using Amazon;
 using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
-using osi-msg-inventory-avails.Repositories;
+using osimsginventoryavails.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);

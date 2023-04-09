@@ -1,23 +1,20 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  Sample SAM Template for osi-msg-inventory-avails
+  Sample SAM Template for osimsginventoryavails
 
 # More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
 Globals:
   Function:
     Timeout: 100
-    Tracing: Active
-  Api:
-    TracingEnabled: True
 
 Resources:
   NetCodeWebAPIServerless:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       Description: A simple example includes a .NET Core WebAPI App with DynamoDB table.
-      CodeUri: ./src/osi-msg-inventory-avails/
-      Handler: osi-msg-inventory-avails
+      CodeUri: ./src/osimsginventoryavails/
+      Handler: osimsginventoryavails
       Runtime: dotnet6
       MemorySize: 1024
       Environment: # More info about Env Vars: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#environment-object
@@ -45,7 +42,7 @@ Resources:
   SampleTable:
     Type: AWS::Serverless::SimpleTable
     Properties:
-      TableName: osi-msg-inventory-availsBookCatalog
+      TableName: osimsginventoryavailsBookCatalog
       PrimaryKey:
         Name: Id
         Type: String

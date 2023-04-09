@@ -1,0 +1,22 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+        dotnet: 6.0
+  
+  pre_build:
+    commands:
+      - echo Restore started on `date`
+      - dotnet restore 
+        
+  build:
+    commands:
+      # Use Build phase to build your artifacts (compile, etc.)
+      - sam build -t template.yaml 
+  post_build:
+    commands:
+      - sam package --s3-bucket osi-msg-inventory-avails-bucket --output-template-file packaged-template.yml 
+
+artifacts:
+  files:
+    - packaged-template.yml

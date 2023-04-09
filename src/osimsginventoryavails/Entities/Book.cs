@@ -1,12 +1,12 @@
 using Amazon.DynamoDBv2.DataModel;
 
-namespace osi-msg-inventory-avails.Entities;
+namespace osimsginventoryavails.Entities;
 
 // <summary>
 /// Map the Book Class to DynamoDb Table
 /// To learn more visit https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DeclarativeTagsList.html
 /// </summary>
-[DynamoDBTable("osi-msg-inventory-availsBookCatalog")]
+[DynamoDBTable("osimsginventoryavailsBookCatalog")]
 public class Book
 {
     ///<summary>

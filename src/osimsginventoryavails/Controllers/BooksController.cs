@@ -1,9 +1,9 @@
 using Amazon.DynamoDBv2.DataModel;
 using Microsoft.AspNetCore.Mvc;
-using osi-msg-inventory-avails.Entities;
-using osi-msg-inventory-avails.Repositories;
+using osimsginventoryavails.Entities;
+using osimsginventoryavails.Repositories;
 
-namespace osi-msg-inventory-avails.Controllers;
+namespace osimsginventoryavails.Controllers;
 
 [Route("api/[controller]")]
 [Produces("application/json")]

@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <InternalsVisibleTo Include="osi-msg-inventory-avails.Tests" />
+    <InternalsVisibleTo Include="osimsginventoryavails.Tests" />
   </ItemGroup>
 
 </Project>

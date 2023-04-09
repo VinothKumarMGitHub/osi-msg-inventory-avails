@@ -1,12 +1,12 @@
 ﻿using Bogus;
-using osi-msg-inventory-avails.Entities;
-using osi-msg-inventory-avails.Repositories;
+using osimsginventoryavails.Entities;
+using osimsginventoryavails.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace osi-msg-inventory-avails.Tests
+namespace osimsginventoryavails.Tests
 {
     internal class MockBookRepository : IBookRepository
     {

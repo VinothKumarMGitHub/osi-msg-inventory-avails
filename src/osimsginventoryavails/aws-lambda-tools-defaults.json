@@ -8,7 +8,7 @@
   "profile": "",
   "region": "",
   "configuration": "Release",
-  "s3-prefix": "osi-msg-inventory-avails/",
+  "s3-prefix": "osimsginventoryavails/",
   "template": "serverless.template",
   "template-parameters": ""
 }

@@ -1,6 +1,6 @@
-﻿using osi-msg-inventory-avails.Entities;
+﻿using osimsginventoryavails.Entities;
 
-namespace osi-msg-inventory-avails.Repositories
+namespace osimsginventoryavails.Repositories
 {
     /// <summary>
     /// Sample DynamoDB Table book CRUD

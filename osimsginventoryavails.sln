@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DEAF7F92-411E-4FE7-823B-C4F5DB41BBF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osi-msg-inventory-avails", "src\osi-msg-inventory-avails\osi-msg-inventory-avails.csproj", "{FC5B185F-DEBF-46D8-B864-9EF757827789}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osimsginventoryavails", "src\osimsginventoryavails\osimsginventoryavails.csproj", "{FC5B185F-DEBF-46D8-B864-9EF757827789}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{5527D965-E863-4E48-8EC1-713E276D1BBD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osi-msg-inventory-avails.Tests", "tests\osi-msg-inventory-avails.Tests\osi-msg-inventory-avails.Tests.csproj", "{923A8DB8-35F2-4671-8BC2-A7BB8B639348}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "osimsginventoryavails.Tests", "tests\osimsginventoryavails.Tests\osimsginventoryavails.Tests.csproj", "{923A8DB8-35F2-4671-8BC2-A7BB8B639348}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

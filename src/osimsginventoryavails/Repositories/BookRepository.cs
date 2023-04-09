@@ -1,8 +1,8 @@
 ﻿using Amazon.DynamoDBv2.DataModel;
 using Amazon.DynamoDBv2.DocumentModel;
-using osi-msg-inventory-avails.Entities;
+using osimsginventoryavails.Entities;
 
-namespace osi-msg-inventory-avails.Repositories
+namespace osimsginventoryavails.Repositories
 {
 
 

@@ -1,4 +1,4 @@
-# osi-msg-inventory-avails
+# osimsginventoryavails
 
 This project contains source code and supporting files for a serverless application that you can deploy with the SAM CLI. It includes the following files and folders.
 
@@ -55,24 +55,24 @@ The first command will build the source of your application. The second command 
 Build your application with the `sam build` command.
 
 ```bash
-osi-msg-inventory-avails$ sam build
+osimsginventoryavails$ sam build
 ```
 
-The SAM CLI installs dependencies defined in `src/osi-msg-inventory-avails/osi-msg-inventory-avails.csproj`, creates a deployment package, and saves it in the `.aws-sam/build` folder.
+The SAM CLI installs dependencies defined in `src/osimsginventoryavails/osimsginventoryavails.csproj`, creates a deployment package, and saves it in the `.aws-sam/build` folder.
 
 Test a single function by invoking it directly with a test event. An event is a JSON document that represents the input that the function receives from the event source. Test events are included in the `events` folder in this project.
 
 Run functions locally and invoke them with the `sam local invoke` command.
 
 ```bash
-osi-msg-inventory-avails$ sam local invoke NetCodeWebAPIServerless --event events/event.json
+osimsginventoryavails$ sam local invoke NetCodeWebAPIServerless --event events/event.json
 ```
 
 The AWS SAM CLI can also emulate your application's API. Use the `sam local start-api` command to run the API locally on port 3000.
 
 ```bash
-osi-msg-inventory-avails$ sam local start-api
-osi-msg-inventory-avails$ curl http://localhost:3000/
+osimsginventoryavails$ sam local start-api
+osimsginventoryavails$ curl http://localhost:3000/
 ```
 
 ## Add a resource to your application
@@ -88,8 +88,8 @@ Resources:
   NetCodeWebAPIServerless:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: ./src/osi-msg-inventory-avails/
-      Handler: osi-msg-inventory-avails::osi-msg-inventory-avails.Function::FunctionHandler
+      CodeUri: ./src/osimsginventoryavails/
+      Handler: osimsginventoryavails::osimsginventoryavails.Function::FunctionHandler
       Runtime: dotnet6
       MemorySize: 1042
       DeadLetterQueue:
@@ -105,8 +105,8 @@ The dead-letter queue is a location for Lambda to send events that could not be 
 Deploy the updated application.
 
 ```bash
-osi-msg-inventory-avails$ sam build
-osi-msg-inventory-avails$ sam deploy
+osimsginventoryavails$ sam build
+osimsginventoryavails$ sam deploy
 ```
 
 Open the [**Applications**](https://console.aws.amazon.com/lambda/home#/applications) page of the Lambda console, and choose your application. When the deployment completes, view the application resources on the **Overview** tab to see the new resource. Then, choose the function to see the updated configuration that specifies the dead-letter queue.
@@ -118,7 +118,7 @@ To simplify troubleshooting, SAM CLI has a command called `sam logs`. `sam logs`
 `NOTE`: This command works for all AWS Lambda functions; not just the ones you deploy using SAM.
 
 ```bash
-osi-msg-inventory-avails$ sam logs -n NetCodeWebAPIServerless --stack-name osi-msg-inventory-avails --tail
+osimsginventoryavails$ sam logs -n NetCodeWebAPIServerless --stack-name osimsginventoryavails --tail
 ```
 
 You can find more information and examples about filtering Lambda function logs in the [SAM CLI Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-logging.html).
@@ -128,7 +128,7 @@ You can find more information and examples about filtering Lambda function logs 
 Tests are defined in the `test` folder in this project.
 
 ```bash
-osi-msg-inventory-avails$ dotnet test test/osi-msg-inventory-avails.Tests/osi-msg-inventory-avails.Tests.csproj 
+osimsginventoryavails$ dotnet test test/osimsginventoryavails.Tests/osimsginventoryavails.Tests.csproj 
 ```
 
 ## Cleanup
@@ -136,7 +136,7 @@ osi-msg-inventory-avails$ dotnet test test/osi-msg-inventory-avails.Tests/osi-ms
 To delete the sample application that you created, use the AWS CLI. Assuming you used your project name for the stack name, you can run the following:
 
 ```bash
-aws cloudformation delete-stack --stack-name osi-msg-inventory-avails
+aws cloudformation delete-stack --stack-name osimsginventoryavails
 ```
 
 ## Resources

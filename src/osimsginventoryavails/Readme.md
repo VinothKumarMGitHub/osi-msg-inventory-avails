@@ -45,6 +45,6 @@ If already installed check if new version is available.
 
 Deploy application
 ```
-    cd "osi-msg-inventory-avails/src/osi-msg-inventory-avails"
+    cd "osimsginventoryavails/src/osimsginventoryavails"
     dotnet lambda deploy-serverless
 ```

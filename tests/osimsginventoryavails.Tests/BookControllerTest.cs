@@ -1,5 +1,5 @@
-﻿using osi-msg-inventory-avails.Entities;
-using osi-msg-inventory-avails.Repositories;
+﻿using osimsginventoryavails.Entities;
+using osimsginventoryavails.Repositories;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using System.Collections.Generic;
@@ -7,7 +7,7 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace osi-msg-inventory-avails.Tests
+namespace osimsginventoryavails.Tests
 {
     public class BookControllerTest
     {

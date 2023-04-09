@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\osi-msg-inventory-avails\osi-msg-inventory-avails.csproj" />
+    <ProjectReference Include="..\..\src\osimsginventoryavails\osimsginventoryavails.csproj" />
   </ItemGroup>
 
 </Project>
